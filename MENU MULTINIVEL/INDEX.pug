@@ -1,0 +1,40 @@
+// Código JavaScript en pug
+// Menu multinivel
+
+- 
+    var pages = [
+        {
+            title: 'Home',
+            url: 'Index.html',
+            child: []
+        },
+        {
+            title: 'Services',
+            url: 'Services.html',
+            child: [
+            {
+                title: 'Web design',
+                url: 'Web-design.html'
+            },
+            {
+                title: 'Seo',
+                url: 'Seo.html'
+            }
+            ]
+        },
+        {
+            title: 'Contact us',
+            url: 'Contact.html',
+            child: []
+        }
+    ]
+
+ul 
+    each page in pages
+        li 
+            a(href= page.url)= page.title
+            if page.child.length > 0
+                ul
+                    each subPage in page.child
+                        li: a(href= subPage.url)= subPage.title
+
