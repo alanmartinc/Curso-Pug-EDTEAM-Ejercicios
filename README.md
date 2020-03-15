@@ -1,2 +1,15 @@
 # Curso-Pug-EDTEAM-Ejercicios
-HTML, JS - https://ed.team/cursos/pug
+
+## HTML, JS
+
+- Sintaxis
+- Estilos y scripts
+- Anidaciones y detalles
+- Implementación de código JavaScript
+- Condicionales
+- Ciclos
+- Recorrer objetos
+- Menu multinivel
+- Prepros
+- NPM PUG-CLI
+- CSS == 3
