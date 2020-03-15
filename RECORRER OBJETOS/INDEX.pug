@@ -1,0 +1,13 @@
+// Código JavaScript en pug
+// Objetos
+
+- 
+    const EDteam = {
+        ceo: 'Alan',
+        cto: 'Lucas',
+        coo: 'Mauricio'
+    }
+
+ul
+    each val, key in EDteam
+        li= `${val} es el ${key.toUpperCase()} de EDteam`
