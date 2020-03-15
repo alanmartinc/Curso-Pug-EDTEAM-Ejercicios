@@ -1,0 +1,15 @@
+// Código JavaScript en pug
+// Ciclos
+
+- var days = ['Lunes', 'Martes', 'Miercoles']
+
+each day, i in days
+    p= `${day.toUpperCase()} es el día ${i + 1}`
+
+- pages = ['Home', 'Quienes somos', 'Contacto']
+
+ul
+    each page in pages
+        li: a(href=`${page.split(' ').join('-')}.html`)= page
+    else
+        li No hay elementos disponibles por el momento
