@@ -1,0 +1,15 @@
+// Código JavaScript en pug
+// Code unbuffered (no sale a HTML)
+// Code buffered (si sale a HTML)
+
+-let currentPage = 'Home'
+-let name = 'Alan Cabot'
+-
+    let EDteam = {
+        ceo: 'Alan',
+        cto: 'Lucas',
+        coo: 'Mauricio'
+    }
+
+body(class= currentPage).main-page
+    p= `${EDteam.ceo}, Alumno de EDTEAM`
