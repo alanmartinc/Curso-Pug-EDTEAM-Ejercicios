@@ -1,0 +1,21 @@
+block CONFIG
+    include CONFIG
+
+include MIXINS
+
+doctype
+html
+    head
+        title= `${pageTitle} - ${siteName}` 
+        meta(name="description" content= metaDescription)
+        block styles
+            link(rel="stylesheet" href="CSS/STYLE.css")
+    body(class= `${currentPage.toLowerCase().split(' ').join('-')}`)
+        include MENU
+        h1 Mi primer texto
+        block content
+        footer
+            block footer
+        script. 
+            console.log('Hola Mundo')
+        

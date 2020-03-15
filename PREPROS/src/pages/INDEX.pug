@@ -1,0 +1,18 @@
+extends ../includes/TEMPLATE 
+append CONFIG
+    - pageTitle = 'Bienvenidos'
+    - currentPage = 'Home page'
+
+append styles
+    link(href="#" rel="stylesheet")
+
+block content
+    p Mi primera página web
+
+block content
+    +boton('https://ed.team', 'Ir a EDteam')
+
+    +card('EDteam.jpg', 'Bienvenidos', 'Estudia en EDteam')
+
+block footer
+    p EDteam
